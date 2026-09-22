@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cristian &amp; Gabriela — 28 Noiembrie 2026</title>
+<meta name="description" content="Invitație la nunta lui Cristian și Gabriela, 28 Noiembrie 2026, Orhei">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ivory:#F8F4EE;
+    --ivory-deep:#F1EBE1;
+    --sage:#A9B4A0;
+    --sage-deep:#828E77;
+    --taupe:#CBB9AB;
+    --ink:#3E3A34;
+    --ink-soft:#8A8377;
+    --line:#DCD3C4;
+    --hairline: rgba(62,58,52,0.14);
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--ivory);
+    color:var(--ink);
+    font-family:'Jost', sans-serif;
+    font-weight:300;
+    -webkit-font-smoothing:antialiased;
+  }
+  @media (prefers-reduced-motion: reduce){
+    *{animation:none !important; transition:none !important;}
+  }
+
+  h1,h2,.serif{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:500;
+    letter-spacing:0.01em;
+  }
+
+  a{color:inherit;}
+
+  .wrap{
+    max-width:640px;
+    margin:0 auto;
+    padding:0 28px;
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    min-height:100svh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:60px 28px;
+    position:relative;
+    opacity:0;
+    animation:heroIn 1.4s ease-out 0.15s forwards;
+  }
+  @keyframes heroIn{
+    from{opacity:0; transform:translateY(14px);}
+    to{opacity:1; transform:translateY(0);}
+  }
+
+  .sprig{
+    width:120px;
+    height:auto;
+    margin-bottom:34px;
+    color:var(--sage-deep);
+  }
+
+  .kicker{
+    font-size:13px;
+    letter-spacing:0.16em;
+    color:var(--ink-soft);
+    margin:0 0 22px;
+  }
+
+  .names{
+    font-size:clamp(48px, 11vw, 84px);
+    line-height:1.05;
+    margin:0;
+  }
+  .names .amp{
+    display:block;
+    font-style:italic;
+    font-size:0.5em;
+    color:var(--sage-deep);
+    margin:6px 0;
+  }
+
+  .hero-date{
+    margin-top:30px;
+    font-size:19px;
+    color:var(--ink-soft);
+    letter-spacing:0.04em;
+  }
+
+  .hero-place{
+    margin-top:6px;
+    font-size:15px;
+    color:var(--ink-soft);
+  }
+
+  .scroll-cue{
+    position:absolute;
+    bottom:34px;
+    left:50%;
+    transform:translateX(-50%);
+    width:1px;
+    height:46px;
+    background:linear-gradient(var(--sage-deep), transparent);
+    opacity:0.6;
+  }
+
+  /* ---------- SECTION SHELL ---------- */
+  section{
+    padding:88px 0;
+  }
+  .section-inner{
+    max-width:640px;
+    margin:0 auto;
+    padding:0 28px;
+  }
+  .divider{
+    width:1px;
+    height:56px;
+    background:var(--line);
+    margin:0 auto;
+  }
+
+  .eyebrow{
+    text-align:center;
+    font-size:13px;
+    color:var(--ink-soft);
+    letter-spacing:0.02em;
+    margin:0 0 8px;
+  }
+  .section-title{
+    text-align:center;
+    font-size:clamp(30px,6vw,40px);
+    margin:0 0 8px;
+  }
+  .lede{
+    text-align:center;
+    max-width:440px;
+    margin:0 auto 56px;
+    color:var(--ink-soft);
+    font-size:16px;
+    line-height:1.7;
+  }
+
+  /* ---------- COUNTDOWN ---------- */
+  .countdown{
+    display:flex;
+    justify-content:center;
+    gap:clamp(14px,5vw,34px);
+    flex-wrap:wrap;
+  }
+  .cd-unit{
+    text-align:center;
+    min-width:64px;
+  }
+  .cd-num{
+    font-family:'Cormorant Garamond', serif;
+    font-size:clamp(36px,8vw,52px);
+    font-weight:500;
+    color:var(--ink);
+    font-variant-numeric:tabular-nums;
+  }
+  .cd-label{
+    font-size:11px;
+    letter-spacing:0.1em;
+    color:var(--ink-soft);
+    margin-top:2px;
+  }
+  .cd-sep{
+    font-family:'Cormorant Garamond', serif;
+    font-size:clamp(26px,6vw,38px);
+    color:var(--line);
+    align-self:center;
+    padding-top:4px;
+  }
+
+  /* ---------- PROGRAM / TIMELINE ---------- */
+  .timeline{
+    position:relative;
+    padding-left:0;
+  }
+  .tl-item{
+    position:relative;
+    display:grid;
+    grid-template-columns:88px 1fr;
+    gap:22px;
+    padding-bottom:52px;
+  }
+  .tl-item:last-child{padding-bottom:0;}
+  .tl-item::before{
+    content:"";
+    position:absolute;
+    left:88px;
+    top:8px;
+    width:9px;
+    height:9px;
+    border-radius:50%;
+    background:var(--sage-deep);
+    transform:translateX(-50%);
+  }
+  .tl-item::after{
+    content:"";
+    position:absolute;
+    left:88px;
+    top:20px;
+    bottom:-8px;
+    width:1px;
+    background:var(--line);
+    transform:translateX(-50%);
+  }
+  .tl-item:last-child::after{display:none;}
+
+  .tl-time{
+    font-family:'Cormorant Garamond', serif;
+    font-size:26px;
+    color:var(--ink);
+    text-align:right;
+    padding-top:0;
+  }
+  .tl-body h3{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:500;
+    font-size:23px;
+    margin:0 0 6px;
+  }
+  .tl-body p{
+    margin:0;
+    font-size:15px;
+    line-height:1.65;
+    color:var(--ink-soft);
+  }
+
+  /* ---------- LOCATIONS ---------- */
+  .locations{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+  }
+  .loc-card{
+    border:1px solid var(--hairline);
+    background:var(--ivory-deep);
+    padding:30px 28px;
+    text-align:center;
+  }
+  .loc-card .tag{
+    font-size:11px;
+    letter-spacing:0.12em;
+    color:var(--sage-deep);
+    margin-bottom:10px;
+  }
+  .loc-card h3{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:500;
+    font-size:26px;
+    margin:0 0 8px;
+  }
+  .loc-card p{
+    margin:0 0 18px;
+    color:var(--ink-soft);
+    font-size:15px;
+    line-height:1.6;
+  }
+  .map-link{
+    display:inline-block;
+    font-size:13px;
+    letter-spacing:0.04em;
+    text-decoration:none;
+    color:var(--ink);
+    border-bottom:1px solid var(--sage-deep);
+    padding-bottom:3px;
+    transition:opacity .2s ease;
+  }
+  .map-link:hover{opacity:0.6;}
+
+  /* ---------- PHOTO ---------- */
+  .photo-frame{
+    max-width:640px;
+    margin:0 auto;
+    padding:0 28px;
+  }
+  .photo-frame img{
+    width:100%;
+    height:auto;
+    display:block;
+    filter:grayscale(0.08);
+  }
+
+  /* ---------- COUNTDOWN (photo bg) ---------- */
+  .countdown-photo{
+    position:relative;
+    padding:100px 0;
+    overflow:hidden;
+    isolation:isolate;
+  }
+  .countdown-photo::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background-image:var(--cd-bg);
+    background-size:cover;
+    background-position:center;
+    z-index:-2;
+  }
+  .countdown-photo::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(180deg, rgba(62,58,52,0.55), rgba(62,58,52,0.68));
+    z-index:-1;
+  }
+  .countdown-photo .eyebrow,
+  .countdown-photo .section-title{
+    color:var(--ivory);
+  }
+  .countdown-photo .cd-num{ color:var(--ivory); }
+  .countdown-photo .cd-label{ color:rgba(248,244,238,0.75); }
+  .countdown-photo .cd-sep{ color:rgba(248,244,238,0.4); }
+
+  /* ---------- RSVP ---------- */
+  .rsvp-box{
+    text-align:center;
+    border-top:1px solid var(--hairline);
+    border-bottom:1px solid var(--hairline);
+    padding:52px 0;
+  }
+  .rsvp-deadline{
+    font-family:'Cormorant Garamond', serif;
+    font-size:22px;
+    margin:0 0 26px;
+    color:var(--ink);
+  }
+  .rsvp-btn{
+    display:inline-block;
+    font-family:'Jost', sans-serif;
+    font-size:14px;
+    letter-spacing:0.06em;
+    text-decoration:none;
+    color:var(--ivory);
+    background:var(--sage-deep);
+    padding:14px 34px;
+    transition:background .2s ease;
+  }
+  .rsvp-btn:hover{background:var(--ink);}
+  .rsvp-note{
+    margin-top:16px;
+    font-size:13px;
+    color:var(--ink-soft);
+  }
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    text-align:center;
+    padding:60px 28px 70px;
+  }
+  footer .names-small{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-size:20px;
+    color:var(--sage-deep);
+  }
+
+  :focus-visible{
+    outline:2px solid var(--sage-deep);
+    outline-offset:3px;
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== HERO ===== -->
+<div class="hero">
+  <svg class="sprig" viewBox="0 0 120 90" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M60 88C60 88 58 55 60 30" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+    <path d="M60 70C60 70 44 62 38 48" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+    <path d="M60 70C60 70 76 62 82 48" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+    <path d="M60 52C60 52 47 45 42 33" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+    <path d="M60 52C60 52 73 45 78 33" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+    <ellipse cx="38" cy="46" rx="6" ry="3.2" transform="rotate(-30 38 46)" fill="currentColor" opacity="0.55"/>
+    <ellipse cx="82" cy="46" rx="6" ry="3.2" transform="rotate(30 82 46)" fill="currentColor" opacity="0.55"/>
+    <ellipse cx="42" cy="31" rx="5" ry="2.6" transform="rotate(-30 42 31)" fill="currentColor" opacity="0.45"/>
+    <ellipse cx="78" cy="31" rx="5" ry="2.6" transform="rotate(30 78 31)" fill="currentColor" opacity="0.45"/>
+    <circle cx="60" cy="28" r="3.4" fill="currentColor" opacity="0.7"/>
+  </svg>
+  <p class="kicker">NE CĂSĂTORIM</p>
+  <h1 class="names">Cristian<span class="amp">&amp;</span>Gabriela</h1>
+  <p class="hero-date">28 Noiembrie 2026</p>
+  <p class="hero-place">Orhei</p>
+  <div class="scroll-cue"></div>
+</div>
+
+<!-- ===== PHOTO ===== -->
+<div class="photo-frame">
+  <img src="assets/poza-1.jpg" alt="Cristian și Gabriela" loading="lazy">
+</div>
+
+<!-- ===== COUNTDOWN (pe fundal foto) ===== -->
+<section class="countdown-photo" style="--cd-bg:url('assets/poza-2-blur.jpg');">
+  <div class="section-inner">
+    <p class="eyebrow">MAI SUNT</p>
+    <h2 class="section-title" style="margin-bottom:44px;">Până la marea zi</h2>
+    <div class="countdown" id="countdown">
+      <div class="cd-unit"><div class="cd-num" id="cd-days">–</div><div class="cd-label">ZILE</div></div>
+      <div class="cd-sep">·</div>
+      <div class="cd-unit"><div class="cd-num" id="cd-hours">–</div><div class="cd-label">ORE</div></div>
+      <div class="cd-sep">·</div>
+      <div class="cd-unit"><div class="cd-num" id="cd-min">–</div><div class="cd-label">MINUTE</div></div>
+      <div class="cd-sep">·</div>
+      <div class="cd-unit"><div class="cd-num" id="cd-sec">–</div><div class="cd-label">SECUNDE</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== PROGRAM ===== -->
+<section>
+  <div class="section-inner">
+    <p class="eyebrow">SÂMBĂTĂ, 28 NOIEMBRIE 2026</p>
+    <h2 class="section-title">Programul zilei</h2>
+    <p class="lede">Cu bucurie vă invităm să fiți alături de noi la cele două momente ale zilei.</p>
+
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-time">12:00</div>
+        <div class="tl-body">
+          <h3>Cuvântarea</h3>
+          <p>Sala Regatului Martorilor lui Iehova, Orhei</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">17:00</div>
+        <div class="tl-body">
+          <h3>Petrecerea</h3>
+          <p>Restaurantul „Casa Neamului”, Măgdăcești</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== LOCATIONS ===== -->
+<section>
+  <div class="section-inner">
+    <p class="eyebrow">UNDE NE GĂSIȚI</p>
+    <h2 class="section-title" style="margin-bottom:44px;">Locațiile</h2>
+
+    <div class="locations">
+      <div class="loc-card">
+        <p class="tag">ORA 12:00</p>
+        <h3>Sala Regatului</h3>
+        <p>Martorii lui Iehova<br>Orhei</p>
+        <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Sala+Regatului+Martorii+lui+Iehova+Orhei" target="_blank" rel="noopener">Deschide în Google Maps</a>
+      </div>
+      <div class="loc-card">
+        <p class="tag">ORA 17:00</p>
+        <h3>Casa Neamului</h3>
+        <p>Restaurant<br>Măgdăcești</p>
+        <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Restaurant+Casa+Neamului+Magdacesti" target="_blank" rel="noopener">Deschide în Google Maps</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RSVP ===== -->
+<section style="padding-top:0;">
+  <div class="section-inner">
+    <div class="rsvp-box">
+      <p class="eyebrow">CONFIRMARE</p>
+      <h2 class="section-title" style="margin-bottom:26px;">Vă așteptăm alături de noi</h2>
+      <p class="rsvp-deadline">Vă rugăm confirmați prezența</p>
+      <!-- Înlocuiți numărul de telefon de mai jos cu numărul dumneavoastră -->
+      <a class="rsvp-btn" href="https://wa.me/37300000000?text=Bună!%20Confirm%20cu%20bucurie%20prezența%20la%20nunta%20Cristian%20%26%20Gabriela%2C%2028.11.2026." target="_blank" rel="noopener">Confirmă prezența</a>
+      <p class="rsvp-note">sau sunați-ne direct — abia așteptăm să vă vedem</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p class="names-small">Cristian &amp; Gabriela</p>
+</footer>
+
+<script>
+  (function(){
+    var target = new Date("2026-11-28T12:00:00+02:00").getTime();
+
+    function pad(n){ return String(n).padStart(2,'0'); }
+
+    function tick(){
+      var now = Date.now();
+      var diff = target - now;
+      var days, hours, mins, secs;
+      if(diff <= 0){
+        days=0; hours=0; mins=0; secs=0;
+      } else {
+        days = Math.floor(diff / 86400000);
+        hours = Math.floor((diff % 86400000) / 3600000);
+        mins = Math.floor((diff % 3600000) / 60000);
+        secs = Math.floor((diff % 60000) / 1000);
+      }
+      document.getElementById('cd-days').textContent = days;
+      document.getElementById('cd-hours').textContent = pad(hours);
+      document.getElementById('cd-min').textContent = pad(mins);
+      document.getElementById('cd-sec').textContent = pad(secs);
+    }
+    tick();
+    setInterval(tick, 1000);
+  })();
+</script>
+
+</body>
+</html>
